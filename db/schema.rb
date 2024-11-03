@@ -40,7 +40,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_11_03_125358) do
   create_table "categories", force: :cascade do |t|
     t.string "name"
     t.integer "status", default: 0
-    t.integer "rentable"
+    t.boolean "rentable", default: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
